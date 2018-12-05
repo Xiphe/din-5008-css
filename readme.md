@@ -12,7 +12,7 @@ or `<link rel="stylesheet" href="https://xiphe.net/din-5008-css/din-5008.css" />
 
 ## Usage
 
-See [example.html](./blob/master/index.html)
+See [example.html](./index.html)
 
 Components
 
