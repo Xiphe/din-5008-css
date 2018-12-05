@@ -1,0 +1,161 @@
+din-5008 {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+  width: 210mm;
+  height: 296mm;
+  padding-right: 20mm;
+}
+din-5008[form='B'] {
+  padding-top: 45mm;
+}
+din-5008 {
+  padding-top: 27mm;
+}
+
+/* Falt- und Lochmarken */
+din-5008::before,
+din-5008::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: block;
+  border: 1pt solid var(--markers, rgba(0, 0, 0, 0.3));
+  border-left: none;
+  border-right: none;
+  width: 10mm;
+}
+din-5008::after {
+  top: 148.5mm;
+  width: 15mm;
+  border-bottom: none;
+}
+din-5008::before {
+  height: calc(105mm - 1pt);
+}
+din-5008::before {
+  top: 87mm;
+}
+din-5008[form='B']::before {
+  top: 105mm;
+}
+din-5008[no-markers]::before,
+din-5008[no-markers]::after {
+  display: none;
+}
+
+din-5008 briefkopf,
+din-5008 .briefkopf,
+din-5008 rucksendeangabe,
+din-5008 .rucksendeangabe,
+din-5008 vermerkzone,
+din-5008 .vermerkzone,
+din-5008 anschriftzone,
+din-5008 .anschriftzone,
+din-5008 informationsblock,
+din-5008 .informationsblock,
+din-5008 textfeld,
+din-5008 .textfeld,
+din-5008 seitenangabe,
+din-5008 .seitenangabe,
+din-5008 fusszeile,
+din-5008 .fusszeile {
+  display: block;
+}
+
+din-5008 briefkopf,
+din-5008 .briefkopf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210mm;
+  height: 27mm;
+}
+
+din-5008[form='B'] briefkopf,
+din-5008[form='B'] .briefkopf {
+  height: 45mm;
+}
+
+din-5008 rucksendeangabe,
+din-5008 .rucksendeangabe,
+din-5008 vermerkzone,
+din-5008 .vermerkzone,
+din-5008 anschriftzone,
+din-5008 .anschriftzone {
+  position: absolute;
+  left: 25mm;
+  width: 80mm;
+}
+
+din-5008 rucksendeangabe,
+din-5008 .rucksendeangabe {
+  font-size: 8pt;
+  top: 27mm;
+  height: 5mm;
+}
+din-5008[form='B'] rucksendeangabe,
+din-5008[form='B'] .rucksendeangabe {
+  display: none;
+}
+
+din-5008 vermerkzone,
+din-5008 .vermerkzone {
+  top: 32mm;
+  height: 12.7mm;
+}
+din-5008[form='B'] vermerkzone,
+din-5008[form='B'] .vermerkzone {
+  top: 45mm;
+  height: 17.7mm;
+}
+
+din-5008 anschriftzone,
+din-5008 .anschriftzone {
+  top: 44.7mm;
+  height: 27.3mm;
+}
+din-5008[form='B'] anschriftzone,
+din-5008[form='B'] .anschriftzone {
+  top: 62.7mm;
+  height: 27.3mm;
+}
+
+din-5008 informationsblock,
+din-5008 .informationsblock {
+  margin: 5mm 0 8.46mm 125mm;
+  max-width: 75mm;
+  min-height: 40mm;
+}
+din-5008[form='B'] informationsblock,
+din-5008[form='B'] .informationsblock {
+  height: 40mm;
+}
+
+din-5008 textfeld,
+din-5008 .textfeld {
+  margin: 0 0 4.23mm 25mm;
+}
+
+din-5008 seitenangabe,
+din-5008 .seitenangabe {
+  text-align: right;
+  margin: 0 0 4.23mm;
+}
+
+din-5008 fusszeile,
+din-5008 .fusszeile {
+  position: absolute;
+  bottom: 6.5mm;
+  left: 25mm;
+  width: 165mm;
+}
+
+@media print {
+  din-5008 {
+    width: 210mm;
+  }
+}

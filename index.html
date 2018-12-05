@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Example Document in DIN 5008</title>
+    <link rel="stylesheet" href="din-5008.css" />
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      body {
+        margin: 0;
+      }
+      briefkopf {
+        background: lightblue;
+      }
+      @media screen {
+        body {
+          background: #e0e0e0;
+          margin: 10mm;
+        }
+        din-5008 {
+          background: white;
+          box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
+          margin: 0mm auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <din-5008>
+      <briefkopf></briefkopf>
+      <rucksendeangabe>
+        Mustermann GmbH | Beispiel-Straße 12 | 12345 Beispielhausen
+      </rucksendeangabe>
+      <vermerkzone>Nicht nachsenden!</vermerkzone>
+      <anschriftzone>
+        Firma<br />
+        Ansprechpartner<br />
+        Straße und Hausnummer<br />
+        Postleitzahl und Ort
+      </anschriftzone>
+      <informationsblock> 32. Februar 2000 </informationsblock>
+      <textfeld>
+        <h2>Example Document using din-5008-css</h2>
+        <p>
+          Documentation:
+          <a href="https://github.com/Xiphe/din-5008-css"
+            >https://github.com/Xiphe/din-5008-css</a
+          >
+        </p>
+        <p style="margin-top: 10mm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </textfeld>
+      <seitenangabe>Seite 1 von 4</seitenangabe>
+      <fusszeile> Footer dies das... </fusszeile>
+    </din-5008>
+  </body>
+</html>

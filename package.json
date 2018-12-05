@@ -1,0 +1,25 @@
+{
+  "name": "din-5008-css",
+  "version": "0.1.0",
+  "description": "css for layouting a A4 paper according to DIN-5008",
+  "main": "din-5008.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Xiphe/din-5008-css.git"
+  },
+  "keywords": [
+    "din-5008",
+    "css",
+    "paper",
+    "layout"
+  ],
+  "author": "Hannes Diercks <din-5008-css@xiphe.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xiphe/din-5008-css/issues"
+  },
+  "homepage": "https://github.com/Xiphe/din-5008-css#readme"
+}
