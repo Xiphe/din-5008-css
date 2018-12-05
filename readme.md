@@ -4,6 +4,12 @@ Stylesheet for layouting a A4 paper according to [DIN 5008](https://de.wikipedia
 
 Based on [these examples from wikimedia](https://commons.wikimedia.org/wiki/Category:DIN_5008?uselang=de)
 
+## Install
+
+`npm install din-5008-css` + use with your favorite bundler
+
+or `<link rel="stylesheet" href="https://xiphe.net/din-5008-css/din-5008.css" />`
+
 ## Usage
 
 See [example.html](./blob/master/index.html)
