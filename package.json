@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "type": "module",
   "description": "css for layouting a A4 paper according to DIN-5008",
-  "main": "din-5008.css",
+  "main": "din-5008.js",
   "types": "index.d.ts",
   "scripts": {
     "prepare": "awk 'BEGIN{while((getline line < \"din-5008.css\") > 0) css = css line \"\\n\"} /CSS/{gsub(/CSS/, css); print; next} {print}' index.js > index.js.tmp && mv index.js.tmp index.js",
