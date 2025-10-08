@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { HTMLElement } from 'react';
 
-declare module 'react' {
+declare module 'react/jsx-runtime' {
   namespace JSX {
     interface IntrinsicElements {
       'din-5008': React.DetailedHTMLProps<

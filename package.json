@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/Xiphe/din-5008-css/issues"
   },
-  "homepage": "https://github.com/Xiphe/din-5008-css#readme"
+  "homepage": "https://github.com/Xiphe/din-5008-css#readme",
+  "dependencies": {
+    "react": ">=19"
+  }
 }
