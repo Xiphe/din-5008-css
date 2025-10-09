@@ -1,6 +1,6 @@
 {
   "name": "din-5008-css",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "type": "module",
   "description": "css for layouting a A4 paper according to DIN-5008",
   "main": "index.js",
